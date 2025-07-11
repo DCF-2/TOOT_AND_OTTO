@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que a centralização vertical funcione */
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+}
+
+caption {
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    caption-side: top;
+    color: black;
+    padding-bottom: 20px;
+}
+
+table {
+    border-collapse: separate;
+    margin: 0 auto;
+    background-color: #4a90e2;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+td {
+    border: 3px solid #00408b;
+    text-align: center;
+    --cell-size: 9vmin; 
+    width: clamp(50px, var(--cell-size), 80px);
+    height: clamp(50px, var(--cell-size), 80px);
+    background-color: #ffffff;
+    border-radius: 50%; 
+    font-size: 2.5em; 
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+td:hover {
+    background-color: #e0e0e0;
+}
+
+#piece-selector input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+#piece-selector label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 1.5em; 
+    font-weight: bold;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#piece-selector input[type="radio"]:checked + label {
+    background-color: #4a90e2;
+    color: white;
+    border-color: #00408b;
+}
+#piece-selector label:hover {
+    background-color: #e9ecef;
+}
+.piece-T {
+    color: blue;
+}
+
+.piece-O {
+    color: orange;
+}
+#message {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 40px;
+}
+#game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+#controls-and-info {
+    max-width: 800px; 
+}
+/*
+#side-panel {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 280px;
+}*/
+
+#game-controls, #game-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 800px;
+}
+
+#scoreboard {
+    background-color: #00408b;
+    color: white;
+    border: 3px solid #f5a623;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 300px; /* Aumentado de 250px para 300px */
+}
+
+#scoreboard h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: white; /* Título branco */
+    border-bottom: 2px solid #f5a623; /* Linha laranja abaixo do título */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#scoreboard p {
+    margin: 8px 0;
+    font-size: 1.3em;
+}

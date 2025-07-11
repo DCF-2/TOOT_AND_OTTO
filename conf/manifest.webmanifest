@@ -1,0 +1,22 @@
+{
+  "name": "Toot and Otto - O Jogo",
+  "short_name": "Toot&Otto",
+  "description": "Um jogo de estratégia similar a Lig 4, baseado na atividade da disciplina de Desenvolvimento de Sistemas Web.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f0f0f0",
+  "theme_color": "#4a90e2",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/conf/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/conf/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
