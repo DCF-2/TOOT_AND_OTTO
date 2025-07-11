@@ -32,8 +32,8 @@ Prerequisites: You need a local web server to serve the files. The Live Server e
 
 4.The game will open in your default browser.
 
-
-````📁Project Structure
+# 📁Project Structure
+````
 /
 |-- conf/                 # PWA configuration files
 |   |-- images/
